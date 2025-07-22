@@ -1,0 +1,117 @@
+:root {
+  --color-navy: #0B1F3F;
+  --color-gray: #5E6A7D;
+  --color-white: #FFFFFF;
+  --color-green: #1FAD66;
+  --color-red: #D64545;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+}
+
+.connection-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.connection-node {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--color-navy);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.connection-line {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-navy), transparent);
+  opacity: 0.2;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.copy-button {
+  transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+  transform: scale(1.05);
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--color-green), #22c55e);
+  border-radius: 9999px;
+  transition: width 0.5s ease;
+}
+
+.badge {
+  background: linear-gradient(135deg, var(--color-green), #22c55e);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.input-focus {
+  transition: all 0.2s ease;
+}
+
+.input-focus:focus {
+  border-color: var(--color-navy);
+  box-shadow: 0 0 0 3px rgba(11, 31, 63, 0.1);
+}
+
+.scenario-button {
+  transition: all 0.2s ease;
+  border: 2px solid #e5e7eb;
+}
+
+.scenario-button:hover {
+  border-color: var(--color-navy);
+  background-color: #f8fafc;
+}
+
+.scenario-button.selected {
+  border-color: var(--color-navy);
+  background-color: var(--color-navy);
+  color: white;
+}
+
+.tab-button {
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-button:hover {
+  color: var(--color-navy);
+}
+
+.tab-button.active {
+  color: var(--color-navy);
+  border-bottom-color: var(--color-navy);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
